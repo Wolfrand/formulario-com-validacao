@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+
+    <title>Quest Formulário com validação</title>
+</head>
+
+<body>
+    <main class="principal">
+        <section class="fale-conosco">
+            <div class="texto">
+                <h1 class="titulo">
+                    FICOU COM UMA DÚVIDA? NOS MANDE UMA MENSAGEM!
+                </h1>
+                <p class="paragrafo">
+                    Caso tenha ficado com qualquer dúvida, basta nos mandar uma mensagem e entraremos em contato em
+                    menos de 24h.
+                </p>
+            </div>
+
+            <form class="formulario" method="post">
+                <div class="input">
+                    <input class="campo-de-preenchimento" type="text" name="nome" id="nome" placeholder="Nome completo *">
+                    <p class="campo-obrigatorio">Campo obrigatório</p>
+                </div>  
+
+                <div class="input">
+                    <input class="campo-de-preenchimento" type="email" name="email" id="email" placeholder="Email *">
+                    <p class="campo-obrigatorio">Campo obrigatório</p>
+                </div>
+
+                <div class="input">
+                    <input class="campo-de-preenchimento" type="tel" name="telefone" id="telefone" placeholder="Telefone *">
+                    <p class="campo-obrigatorio">Campo obrigatório</p>
+                </div>
+
+                <div class="input">
+                    <textarea class="campo-de-preenchimento" name="mensagem" id="mensagem" placeholder="Mensagem *"></textarea>
+                    <p class="campo-obrigatorio">Campo obrigatório</p>
+                </div>
+
+                <p class="campos-obrigatorios">*Campos obrigatórios</p>
+
+                <button type="submit" id="btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="./src/js/formulario.js"></script>
+</body>
+
+</html>

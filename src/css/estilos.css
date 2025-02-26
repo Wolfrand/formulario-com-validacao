@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-image: url(../imagens/background.jpg);
+    background-size: contain;
+}
+
+.principal{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fale-conosco{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.fale-conosco .texto{
+    color: #FFFFFF;
+    width: 300px;
+}
+
+.fale-conosco .texto .titulo{
+    font-size: 20px;
+    font-weight: 900;
+    width: 287.25px;
+    margin-bottom: 10px;
+}
+
+.fale-conosco .texto .paragrafo{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.fale-conosco .formulario{
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.fale-conosco .formulario .campo-de-preenchimento{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    width: 300px;
+    padding: 8px;
+}
+
+.fale-conosco .formulario #mensagem{
+    padding: 8px 8px 54px;
+    resize: none;
+    font-family: "Roboto", sans-serif;
+}
+
+.campo-obrigatorio{
+    font-size: 8px;
+    font-weight: 400;
+    color: #F52E2E;
+    visibility: hidden;
+}
+
+.fale-conosco .formulario .campos-obrigatorios{
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.borda-verde{
+    border: 1.8px solid green;
+}
+
+.borda-vermelha{
+    border: 1.8px solid red;
+}
+
+#btn{
+    color: #FFFFFF;
+    background-color: #3CCC87;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+#btn:hover{
+    background-color: #33b174;
+    font-weight: 500;
+}
+
+.mostrar{
+    visibility: visible;
+}
