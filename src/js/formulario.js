@@ -1,5 +1,6 @@
 const formulario = document.querySelector(".formulario");
 const campoDePreenchimento = document.querySelectorAll(".campo-de-preenchimento");
+const inputTelefone = document.getElementById('telefone');
 
 formulario.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -19,3 +20,10 @@ formulario.addEventListener("submit", (event) => {
         };
     });
 });
+
+inputTelefone.addEventListener('keypress', function(event) {
+       const charCode = event.charCode || event.keyCode;
+       if (charCode < 48 || charCode > 57) {
+           event.preventDefault();
+       }
+   });
